@@ -1,0 +1,23 @@
+#young-female {
+    width: 500px;
+    height: 600px;
+    background: #ff69b4;
+}
+
+#older-female {
+    width: 500px;
+    height: 600px;
+    background: #008080;
+}
+
+#young-male {
+    width: 500px;
+    height: 600px;
+    background: #008000;
+}
+
+#older-male {
+    width: 500px;
+    height: 600px;
+    background: #f5deb3;
+}

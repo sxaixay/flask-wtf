@@ -1,0 +1,41 @@
+Вот измененный код:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url }}" />
+    <title>{{ title }}</title>
+    <style>
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            color: darkgreen;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: darkgreen;
+            margin-left: 20px;
+            text-decoration: underline;
+        }
+        li {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Миссия Колонизация Марса!</h1>
+    <h4>И на Марсе будет процветать жизнь!</h4>
+    <ul>
+        {% for key, value in dict_items.items() %}
+            {% if key != "title" %}
+                <li>{{ key }}: {{ value }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
